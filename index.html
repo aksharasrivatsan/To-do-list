@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bingo!</title>
+        <link rel="stylesheet" href="./styling.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="status">
+                <div class="description">
+                    <h1>Bingo!</h1>
+                    <p>Hustle!</p>
+                </div>
+                    <div id="RingFill">
+                       <svg width="250" height="250">
+                            <circle class="bg" cx="125" cy="125" r="100"></circle>
+                            <circle class="progress" cx="125" cy="125" r="100"></circle>
+                       </svg>
+                       <div class="progress-text" id="progress-text">0%</div>
+                       <div class="mood-emoji" id="mood-emoji">😐</div>
+                    </div>
+            </div>
+            <form id="task-form" action="">
+                <input type="text" id="task-input" placeholder="Write your task"/>
+                <button type="submit">+</button>
+            </form>
+            <ul class="task-list" id="task-list"></ul>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+        <script src="./app.js"></script>
+    </body>
+</html>
